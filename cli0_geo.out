@@ -1,0 +1,426 @@
+nohup: ignoring input
+/home/tejas/anaconda3/lib/python3.12/site-packages/datasets/utils/_dill.py:379: DeprecationWarning: co_lnotab is deprecated, use co_lines instead.
+  obj.co_lnotab,  # for < python 3.10 [not counted in args]
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 910c06e3-a725-4de4-9824-0e91a19012b2
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message fed7daa2-39f4-404f-8e70-9a326d5fad14
+[92mINFO [0m:      test printout, accuracy: 0.4208, time: 17.71918225288391
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message dbdaf82e-edb4-4e1b-a19d-44edeafe03a7
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 166c8531-f426-4abe-aaec-3fc134710259
+[92mINFO [0m:      test printout, accuracy: 0.4778, time: 35.8912615776062
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message a702cce9-a03a-4704-96a4-20269db83857
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 127d83b4-df64-413d-8e2c-c436effed664
+[92mINFO [0m:      test printout, accuracy: 0.5114, time: 54.1146354675293
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 22dfebc3-4eb3-4ff6-bcad-a2dfe84518aa
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 05d2e0a9-c2c7-41b1-9d2c-22bb38c1ed7b
+[92mINFO [0m:      test printout, accuracy: 0.5412, time: 71.87972903251648
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 26222eac-31d4-4e82-9594-f7fb6ee6f5b3
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message f73f9fac-9129-4ce9-b966-7a5e51c3ff7d
+[92mINFO [0m:      test printout, accuracy: 0.5558, time: 89.72792840003967
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 47b7d1de-8d11-47c5-87d3-122b44407053
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 43d69e1c-0c93-44b4-85a3-4861d04c3c05
+[92mINFO [0m:      test printout, accuracy: 0.5698, time: 107.77282643318176
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 3a87186c-93d5-4b9f-bb32-d420948fe273
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message d12a98ec-a997-4277-8b04-0eba5e1a1339
+[92mINFO [0m:      test printout, accuracy: 0.5862, time: 125.462247133255
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 1fe06ca9-3906-4208-bd38-3991d8d6a97e
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 3154de7c-bb15-43f6-bac5-c0ea1262544e
+[92mINFO [0m:      test printout, accuracy: 0.5958, time: 143.2248411178589
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 6ad4e72e-9c46-470e-a5ed-457ac9e6fd62
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 8f29f97b-e628-4a1f-a8a4-f12c15969e63
+[92mINFO [0m:      test printout, accuracy: 0.6082, time: 160.8868386745453
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 4ece639a-7cbd-408d-8f9d-cc4114763293
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 36f86094-795a-4011-9f36-6297f528500f
+[92mINFO [0m:      test printout, accuracy: 0.6102, time: 178.5871343612671
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message a0d0ffdc-bc2a-4c9a-a53c-b750fc66ac39
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message d00b230f-2e81-429d-a664-58166bcc6bf5
+[92mINFO [0m:      test printout, accuracy: 0.603, time: 198.2742018699646
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 92f19ecf-c461-47b2-a2c1-22e85a515854
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 82562d95-37e8-415a-9edf-b4195fc225c2
+[92mINFO [0m:      test printout, accuracy: 0.612, time: 217.55094718933105
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 70ca58fb-d902-454d-bf04-f217e359e5f4
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 54c1fff0-386b-4989-8cc9-e30c777538b7
+[92mINFO [0m:      test printout, accuracy: 0.6234, time: 235.58429336547852
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 6802bcc8-aa28-40e8-b7d4-d2c72e2e6b53
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message b62f0f98-33a8-4bc2-b035-d1d7f00b04bf
+[92mINFO [0m:      test printout, accuracy: 0.6258, time: 259.3204917907715
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 566e90d9-68da-4f31-9d8b-075ea2edf1c9
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 6681d430-aff1-4ae7-90ff-10ab72730dfd
+[92mINFO [0m:      test printout, accuracy: 0.6294, time: 287.60087609291077
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 95793b4e-2627-4c4b-81ef-cbefbf23b7da
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message d7bed8d4-435d-4668-bdd8-9074dfeda9fc
+[92mINFO [0m:      test printout, accuracy: 0.6168, time: 316.35629057884216
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message a6d13fbf-e897-476f-ae52-16a55bb5a523
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message d2245f59-5725-4bba-8646-6de3daaeda36
+[92mINFO [0m:      test printout, accuracy: 0.6358, time: 345.20168900489807
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 04e92871-255d-47c0-be51-2157a0692258
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 9c76787f-89d5-41f6-8a68-84c7fda11c0b
+[92mINFO [0m:      test printout, accuracy: 0.634, time: 374.26013374328613
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 3a85506f-1fe8-447e-b3c2-f36976097e2f
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 1be7ac69-d358-4cf2-92af-854263746212
+[92mINFO [0m:      test printout, accuracy: 0.6374, time: 402.5841202735901
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 8beefcc6-cc46-41c9-b332-8dad2a4599aa
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message ef27a6e4-9fc9-43b7-bd87-269bb7536e59
+[92mINFO [0m:      test printout, accuracy: 0.6566, time: 431.13787508010864
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message e7630ff5-f777-40cf-8850-65711788b921
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message ef2ad7b1-0028-4148-964f-e4b62f5ce5c4
+[92mINFO [0m:      test printout, accuracy: 0.6496, time: 459.6318061351776
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 82f59f97-a262-49aa-b3ae-0c0b2b9efdae
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 86dea768-487d-4006-aaa3-dff0975ced3d
+[92mINFO [0m:      test printout, accuracy: 0.6548, time: 487.69831895828247
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 5414d786-9f9e-438b-abde-f5e9151cc874
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 7dfbd0b2-21b9-4420-bc81-1db3981b045d
+[92mINFO [0m:      test printout, accuracy: 0.656, time: 516.1932692527771
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 45788b82-5c4b-4da8-990b-e374f5a9b7a6
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 7a893ebc-2229-4372-9269-31cb5db60bc8
+[92mINFO [0m:      test printout, accuracy: 0.6446, time: 544.5072808265686
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 62de32db-97c4-49ba-b6d5-6c5b8394b718
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 05ee6ca0-1d1c-43e3-9316-d4d5316a65b9
+[92mINFO [0m:      test printout, accuracy: 0.658, time: 573.0484056472778
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message a48f15e4-7e1a-4157-8386-c7fc2a079791
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 945e5a89-476b-4ef5-be86-e015da033436
+[92mINFO [0m:      test printout, accuracy: 0.6546, time: 601.512716293335
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 1423eb34-f466-48bb-a7e2-a1ea2a5bec01
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 6c9ea9f4-c62a-4f04-b7c9-eb820cea491c
+[92mINFO [0m:      test printout, accuracy: 0.639, time: 630.4000687599182
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 8e8f7fe4-55d0-4b60-875e-14ab13319d88
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 18490fff-0796-4fbc-a231-47b48d4b1376
+[92mINFO [0m:      test printout, accuracy: 0.6534, time: 659.6597151756287
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 1f1fb73e-79e7-4a3e-8da7-6a64c240d0ac
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 419b28b1-628b-46e4-996b-3c619c274e69
+[92mINFO [0m:      test printout, accuracy: 0.6534, time: 687.8737387657166
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 994f861f-9953-4dd8-89f5-5e4a2db7d53d
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message c95503c6-fbc1-4ce8-956a-43faf621202d
+[92mINFO [0m:      test printout, accuracy: 0.6596, time: 716.2182993888855
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: reconnect message 0d98d45e-5393-41f2-bb23-f8f92ed5bd4e
+[92mINFO [0m:      Disconnect and shut down
+Training 1 epoch(s) w/ 625 batches each
+[1,   100] loss: 0.108
+[1,   200] loss: 0.096
+[1,   300] loss: 0.091
+[1,   400] loss: 0.087
+[1,   500] loss: 0.084
+[1,   600] loss: 0.082
+Training 1 epoch(s) w/ 625 batches each
+[1,   100] loss: 0.080
+[1,   200] loss: 0.076
+[1,   300] loss: 0.077
+[1,   400] loss: 0.077
+[1,   500] loss: 0.074
+[1,   600] loss: 0.073
+Training 1 epoch(s) w/ 625 batches each
+[1,   100] loss: 0.071
+[1,   200] loss: 0.072
+[1,   300] loss: 0.069
+[1,   400] loss: 0.070
+[1,   500] loss: 0.069
+[1,   600] loss: 0.068
+Training 1 epoch(s) w/ 625 batches each
+[1,   100] loss: 0.067
+[1,   200] loss: 0.065
+[1,   300] loss: 0.066
+[1,   400] loss: 0.065
+[1,   500] loss: 0.065
+[1,   600] loss: 0.065
+Training 1 epoch(s) w/ 625 batches each
+[1,   100] loss: 0.062
+[1,   200] loss: 0.063
+[1,   300] loss: 0.063
+[1,   400] loss: 0.062
+[1,   500] loss: 0.062
+[1,   600] loss: 0.063
+Training 1 epoch(s) w/ 625 batches each
+[1,   100] loss: 0.060
+[1,   200] loss: 0.060
+[1,   300] loss: 0.059
+[1,   400] loss: 0.058
+[1,   500] loss: 0.060
+[1,   600] loss: 0.060
+Training 1 epoch(s) w/ 625 batches each
+[1,   100] loss: 0.057
+[1,   200] loss: 0.058
+[1,   300] loss: 0.057
+[1,   400] loss: 0.058
+[1,   500] loss: 0.057
+[1,   600] loss: 0.058
+Training 1 epoch(s) w/ 625 batches each
+[1,   100] loss: 0.056
+[1,   200] loss: 0.055
+[1,   300] loss: 0.054
+[1,   400] loss: 0.056
+[1,   500] loss: 0.056
+[1,   600] loss: 0.056
+Training 1 epoch(s) w/ 625 batches each
+[1,   100] loss: 0.052
+[1,   200] loss: 0.053
+[1,   300] loss: 0.053
+[1,   400] loss: 0.054
+[1,   500] loss: 0.054
+[1,   600] loss: 0.055
+Training 1 epoch(s) w/ 625 batches each
+[1,   100] loss: 0.052
+[1,   200] loss: 0.053
+[1,   300] loss: 0.051
+[1,   400] loss: 0.053
+[1,   500] loss: 0.052
+[1,   600] loss: 0.053
+Training 1 epoch(s) w/ 625 batches each
+[1,   100] loss: 0.050
+[1,   200] loss: 0.049
+[1,   300] loss: 0.050
+[1,   400] loss: 0.051
+[1,   500] loss: 0.053
+[1,   600] loss: 0.051
+Training 1 epoch(s) w/ 625 batches each
+[1,   100] loss: 0.047
+[1,   200] loss: 0.050
+[1,   300] loss: 0.047
+[1,   400] loss: 0.049
+[1,   500] loss: 0.050
+[1,   600] loss: 0.050
+Training 1 epoch(s) w/ 625 batches each
+[1,   100] loss: 0.046
+[1,   200] loss: 0.048
+[1,   300] loss: 0.046
+[1,   400] loss: 0.047
+[1,   500] loss: 0.050
+[1,   600] loss: 0.048
+Training 1 epoch(s) w/ 625 batches each
+[1,   100] loss: 0.046
+[1,   200] loss: 0.046
+[1,   300] loss: 0.047
+[1,   400] loss: 0.047
+[1,   500] loss: 0.048
+[1,   600] loss: 0.046
+Training 1 epoch(s) w/ 625 batches each
+[1,   100] loss: 0.045
+[1,   200] loss: 0.043
+[1,   300] loss: 0.045
+[1,   400] loss: 0.046
+[1,   500] loss: 0.046
+[1,   600] loss: 0.046
+Training 1 epoch(s) w/ 625 batches each
+[1,   100] loss: 0.044
+[1,   200] loss: 0.042
+[1,   300] loss: 0.044
+[1,   400] loss: 0.044
+[1,   500] loss: 0.045
+[1,   600] loss: 0.046
+Training 1 epoch(s) w/ 625 batches each
+[1,   100] loss: 0.042
+[1,   200] loss: 0.043
+[1,   300] loss: 0.042
+[1,   400] loss: 0.044
+[1,   500] loss: 0.044
+[1,   600] loss: 0.045
+Training 1 epoch(s) w/ 625 batches each
+[1,   100] loss: 0.038
+[1,   200] loss: 0.043
+[1,   300] loss: 0.043
+[1,   400] loss: 0.041
+[1,   500] loss: 0.044
+[1,   600] loss: 0.043
+Training 1 epoch(s) w/ 625 batches each
+[1,   100] loss: 0.040
+[1,   200] loss: 0.041
+[1,   300] loss: 0.041
+[1,   400] loss: 0.042
+[1,   500] loss: 0.043
+[1,   600] loss: 0.042
+Training 1 epoch(s) w/ 625 batches each
+[1,   100] loss: 0.040
+[1,   200] loss: 0.040
+[1,   300] loss: 0.041
+[1,   400] loss: 0.040
+[1,   500] loss: 0.040
+[1,   600] loss: 0.042
+Training 1 epoch(s) w/ 625 batches each
+[1,   100] loss: 0.038
+[1,   200] loss: 0.039
+[1,   300] loss: 0.039
+[1,   400] loss: 0.040
+[1,   500] loss: 0.041
+[1,   600] loss: 0.040
+Training 1 epoch(s) w/ 625 batches each
+[1,   100] loss: 0.037
+[1,   200] loss: 0.039
+[1,   300] loss: 0.039
+[1,   400] loss: 0.039
+[1,   500] loss: 0.039
+[1,   600] loss: 0.042
+Training 1 epoch(s) w/ 625 batches each
+[1,   100] loss: 0.037
+[1,   200] loss: 0.037
+[1,   300] loss: 0.038
+[1,   400] loss: 0.039
+[1,   500] loss: 0.040
+[1,   600] loss: 0.038
+Training 1 epoch(s) w/ 625 batches each
+[1,   100] loss: 0.037
+[1,   200] loss: 0.036
+[1,   300] loss: 0.038
+[1,   400] loss: 0.039
+[1,   500] loss: 0.039
+[1,   600] loss: 0.039
+Training 1 epoch(s) w/ 625 batches each
+[1,   100] loss: 0.035
+[1,   200] loss: 0.037
+[1,   300] loss: 0.038
+[1,   400] loss: 0.038
+[1,   500] loss: 0.038
+[1,   600] loss: 0.038
+Training 1 epoch(s) w/ 625 batches each
+[1,   100] loss: 0.034
+[1,   200] loss: 0.036
+[1,   300] loss: 0.036
+[1,   400] loss: 0.037
+[1,   500] loss: 0.037
+[1,   600] loss: 0.037
+Training 1 epoch(s) w/ 625 batches each
+[1,   100] loss: 0.034
+[1,   200] loss: 0.035
+[1,   300] loss: 0.036
+[1,   400] loss: 0.036
+[1,   500] loss: 0.037
+[1,   600] loss: 0.038
+Training 1 epoch(s) w/ 625 batches each
+[1,   100] loss: 0.033
+[1,   200] loss: 0.035
+[1,   300] loss: 0.036
+[1,   400] loss: 0.036
+[1,   500] loss: 0.036
+[1,   600] loss: 0.036
+Training 1 epoch(s) w/ 625 batches each
+[1,   100] loss: 0.033
+[1,   200] loss: 0.033
+[1,   300] loss: 0.034
+[1,   400] loss: 0.036
+[1,   500] loss: 0.035
+[1,   600] loss: 0.037
+Training 1 epoch(s) w/ 625 batches each
+[1,   100] loss: 0.031
+[1,   200] loss: 0.033
+[1,   300] loss: 0.033
+[1,   400] loss: 0.035
+[1,   500] loss: 0.035
+[1,   600] loss: 0.036
