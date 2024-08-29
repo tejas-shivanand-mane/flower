@@ -53,6 +53,6 @@ server = CustomFlowerServer(client_manager=client_manager)
 # Start Flower server
 fl.server.start_server(
     server_address="10.128.15.195:8080",
-    config=fl.server.ServerConfig(num_rounds=10),
+    config=fl.server.ServerConfig(num_rounds=30),
     server = server
 )
