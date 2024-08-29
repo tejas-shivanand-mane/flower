@@ -11,6 +11,11 @@ import torch
 from datasets.utils.logging import disable_progress_bar
 from torch.utils.data import DataLoader
 
+
+from flwr.common.logger import log
+from logging import INFO, DEBUG
+import time
+
 disable_progress_bar()
 
 
@@ -32,6 +37,8 @@ class CifarClient(fl.client.NumPyClient):
         self.model = model
         self.trainloader = trainloader
         self.testloader = testloader
+        self.start_time = time.time()
+        self.cum_time = 0
 
     def get_parameters(self, config: Dict[str, str]) -> List[np.ndarray]:
         self.model.train()
@@ -63,9 +70,15 @@ class CifarClient(fl.client.NumPyClient):
     def fit(
         self, parameters: List[np.ndarray], config: Dict[str, str]
     ) -> Tuple[List[np.ndarray], int, Dict]:
+    
+
+        
         # Set model parameters, train model, return updated model parameters
         self.set_parameters(parameters)
         cifar.train(self.model, self.trainloader, epochs=1, device=DEVICE)
+        
+
+        
         return self.get_parameters(config={}), len(self.trainloader.dataset), {}
 
     def evaluate(
@@ -74,13 +87,18 @@ class CifarClient(fl.client.NumPyClient):
         # Set model parameters, evaluate model on local test dataset, return result
         self.set_parameters(parameters)
         loss, accuracy = cifar.test(self.model, self.testloader, device=DEVICE)
+        
+        self.cum_time = time.time() - self.start_time
+        
+        log(INFO, f"test printout, accuracy: {accuracy}, time: {self.cum_time}")
+        
         return float(loss), len(self.testloader.dataset), {"accuracy": float(accuracy)}
 
 
 def main() -> None:
     """Load data, start CifarClient."""
     parser = argparse.ArgumentParser(description="Flower")
-    parser.add_argument("--partition-id", type=int, required=True, choices=range(0, 10))
+    parser.add_argument("--partition-id", type=int, required=True, choices=range(0, 2))
     args = parser.parse_args()
 
     # Load data
@@ -94,7 +112,7 @@ def main() -> None:
 
     # Start client
     client = CifarClient(model, trainloader, testloader).to_client()
-    fl.client.start_client(server_address="10.128.15.194:8080", client=client)
+    fl.client.start_client(server_address="127.0.0.1:8080", client=client)
 
 
 if __name__ == "__main__":

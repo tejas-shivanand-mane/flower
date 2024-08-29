@@ -4,24 +4,55 @@ from typing import List, Tuple
 
 import flwr as fl
 from flwr.common import Metrics
+import time
 
 
-# Define metric aggregation function
-def weighted_average(metrics: List[Tuple[int, Metrics]]) -> Metrics:
-    # Multiply accuracy of each client by number of examples used
-    accuracies = [num_examples * m["accuracy"] for num_examples, m in metrics]
-    examples = [num_examples for num_examples, _ in metrics]
+from flwr.common.logger import log
+from logging import INFO, DEBUG
 
-    # Aggregate and return custom metric (weighted average)
-    return {"accuracy": sum(accuracies) / sum(examples)}
+
+
+
+
+class CustomFlowerServer(fl.server.Server):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.cumulative_time = 0
+        self.round_start_time = None
+
+    def fit(self, *args, **kwargs):
+        self.round_start_time = time.time()  # Record start time
+        result = super().fit(*args, **kwargs)
+        round_end_time = time.time()  # Record end time
+
+        # Calculate and log round time
+        round_time = round_end_time - self.round_start_time
+        self.cumulative_time += round_time
+
+        
+        return result
+        
+    def evaluate(self, *args, **kwargs):
+        result = super.evaluate(*args, **kwargs)
+        log(INFO, "test printout, server")
+        
+        return result
+
+
 
 
 # Define strategy
-strategy = fl.server.strategy.FedAvg(evaluate_metrics_aggregation_fn=weighted_average)
+
+
+client_manager = fl.server.client_manager.SimpleClientManager()
+
+# Create a server instance
+server = CustomFlowerServer(client_manager=client_manager)
+
 
 # Start Flower server
 fl.server.start_server(
-    server_address="10.128.15.194:8080",
+    server_address="0.0.0.0:8080",
     config=fl.server.ServerConfig(num_rounds=10),
-    strategy=strategy,
+    server = server
 )
