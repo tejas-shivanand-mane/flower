@@ -71,7 +71,7 @@ def load_data(partition_id: int):
     sampler = SubsetRandomSampler(torch.randperm(len(partition_train_test["train"]))[:int(len(partition_train_test["train"]) * 0.1)])
     
     trainloader = DataLoader(partition_train_test["train"], batch_size=100, sampler = sampler)
-    testloader = DataLoader(partition_train_test["test"], batch_size=100, sampler = sampler)
+    testloader = DataLoader(partition_train_test["test"], batch_size=100)
     return trainloader, testloader
 
 
