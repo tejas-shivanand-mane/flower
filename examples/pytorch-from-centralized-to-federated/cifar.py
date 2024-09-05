@@ -17,8 +17,9 @@ import torch.nn as nn
 import torch.nn.functional as F
 from flwr_datasets import FederatedDataset
 from torch import Tensor
-from torch.utils.data import DataLoader
+from torch.utils.data import DataLoader, SubsetRandomSampler
 from torchvision.transforms import Compose, Normalize, ToTensor
+
 
 
 # pylint: disable=unsubscriptable-object
@@ -66,8 +67,11 @@ def load_data(partition_id: int):
         return batch
 
     partition_train_test = partition_train_test.with_transform(apply_transforms)
-    trainloader = DataLoader(partition_train_test["train"], batch_size=100, shuffle=True)
-    testloader = DataLoader(partition_train_test["test"], batch_size=100)
+    
+    sampler = SubsetRandomSampler(torch.randperm(len(train_dataset))[:int(len(train_dataset) * 0.1)])
+    
+    trainloader = DataLoader(partition_train_test["train"], batch_size=100, shuffle=True, sampler = sampler)
+    testloader = DataLoader(partition_train_test["test"], batch_size=100, sampler = sampler)
     return trainloader, testloader
 
 
