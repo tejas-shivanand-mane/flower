@@ -75,7 +75,7 @@ class CifarClient(fl.client.NumPyClient):
         
         # Set model parameters, train model, return updated model parameters
         self.set_parameters(parameters)
-        cifar.train(self.model, batch_size=5, self.trainloader, epochs=1, device=DEVICE)
+        cifar.train(self.model, self.trainloader, epochs=1, device=DEVICE)
         
 
         

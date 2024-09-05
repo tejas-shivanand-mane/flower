@@ -66,8 +66,8 @@ def load_data(partition_id: int):
         return batch
 
     partition_train_test = partition_train_test.with_transform(apply_transforms)
-    trainloader = DataLoader(partition_train_test["train"], batch_size=32, shuffle=True)
-    testloader = DataLoader(partition_train_test["test"], batch_size=32)
+    trainloader = DataLoader(partition_train_test["train"], batch_size=2, shuffle=True)
+    testloader = DataLoader(partition_train_test["test"], batch_size=2)
     return trainloader, testloader
 
 
