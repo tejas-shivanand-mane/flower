@@ -104,7 +104,7 @@ class CifarClient(fl.client.NumPyClient):
 def main() -> None:
     """Load data, start CifarClient."""
     parser = argparse.ArgumentParser(description="Flower")
-    parser.add_argument("--partition-id", type=int, required=True, choices=range(0, 10))
+    parser.add_argument("--partition-id", type=int, required=True, choices=range(0, 15))
     args = parser.parse_args()
 
     # Load data
@@ -118,7 +118,7 @@ def main() -> None:
 
     # Start client
     client = CifarClient(model, trainloader, testloader).to_client()
-    fl.client.start_client(server_address="10.128.15.208:8080", client=client)
+    fl.client.start_client(server_address="10.128.15.209:8080", client=client)
 
 
 if __name__ == "__main__":
