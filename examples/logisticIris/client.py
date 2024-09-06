@@ -43,7 +43,7 @@ class IrisClient(fl.client.NumPyClient):
         # Load partitioned data
         self.X_train, self.X_test, self.y_train, self.y_test = load_partition(partition_id, num_partitions=5)
 
-    def get_parameters(self):
+    def get_parameters(self, config: Dict[str, str]) -> List[np.ndarray]:
         return [self.model.coef_, self.model.intercept_]
 
     def set_parameters(self, parameters):
