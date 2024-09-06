@@ -19,7 +19,7 @@ class CustomFlowerServer(fl.server.Server):
         super().__init__(*args, **kwargs)
         self.cumulative_time = 0
         self.round_start_time = None
-        self.min_clients = 5
+
 
     def fit(self, *args, **kwargs):
         time.sleep(0)    
