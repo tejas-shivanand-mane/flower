@@ -13,6 +13,6 @@ if __name__ == "__main__":
     fl.server.start_server(
         server_address="10.128.15.214:8080",  # Internal IP address of the server
         strategy=strategy,
-        config={"num_rounds": 5}  # Specify how many federated learning rounds you want to run
+        config=fl.server.ServerConfig(num_rounds=30)  # Specify how many federated learning rounds you want to run
     )
 
