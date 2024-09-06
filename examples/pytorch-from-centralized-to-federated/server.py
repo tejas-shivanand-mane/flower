@@ -41,7 +41,21 @@ class CustomFlowerServer(fl.server.Server):
 
 
 
+
+
 # Define strategy
+class DelayedFedAvgStrategy(fl.server.strategy.FedAvg):
+    def aggregate_fit(self, rnd, results, failures):
+        # Introduce latency before aggregating the results
+        time.sleep(5)  # Sleep for 5 seconds to simulate network latency
+        return super().aggregate_fit(rnd, results, failures)
+
+    def aggregate_evaluate(self, rnd, results, failures):
+        # Introduce latency before aggregating the evaluation results
+        time.sleep(5)  # Sleep for 5 seconds to simulate network latency
+        return super().aggregate_evaluate(rnd, results, failures)
+
+
 
 
 client_manager = fl.server.client_manager.SimpleClientManager()
@@ -54,5 +68,6 @@ server = CustomFlowerServer(client_manager=client_manager)
 fl.server.start_server(
     server_address="10.128.15.215:8080",
     config=fl.server.ServerConfig(num_rounds=30),
-    server = server
+    server = server,
+    strategy = DelayedFedAvgStrategy(min_fit_clients=2, min_available_clients=2)
 )
