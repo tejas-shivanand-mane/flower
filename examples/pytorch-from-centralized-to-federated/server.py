@@ -44,7 +44,10 @@ class CustomFlowerServer(fl.server.Server):
 
 
 
-
+strategy = fl.server.strategy.FedAvg(
+    min_fit_clients=5,
+    min_available_clients=5,
+)
 
 client_manager = fl.server.client_manager.SimpleClientManager()
 
@@ -56,5 +59,5 @@ server = CustomFlowerServer(client_manager=client_manager)
 fl.server.start_server(
     server_address="10.128.15.210:8080",
     config=fl.server.ServerConfig(num_rounds=15),
-    server = server
+    server = server, strategy = strategy
 )
