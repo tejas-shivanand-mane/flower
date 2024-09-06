@@ -76,7 +76,7 @@ class CifarClient(fl.client.NumPyClient):
         # Set model parameters, train model, return updated model parameters
         self.set_parameters(parameters)
         
-        time.sleep(5)       
+        time.sleep(0)       
          
         cifar.train(self.model, self.trainloader, epochs=1, device=DEVICE)
         
@@ -89,7 +89,7 @@ class CifarClient(fl.client.NumPyClient):
     ) -> Tuple[float, int, Dict]:
         # Set model parameters, evaluate model on local test dataset, return result
         
-        time.sleep(5)
+        time.sleep(0)
         
         self.set_parameters(parameters)
         loss, accuracy = cifar.test(self.model, self.testloader, device=DEVICE)
@@ -104,7 +104,7 @@ class CifarClient(fl.client.NumPyClient):
 def main() -> None:
     """Load data, start CifarClient."""
     parser = argparse.ArgumentParser(description="Flower")
-    parser.add_argument("--partition-id", type=int, required=True, choices=range(0, 2))
+    parser.add_argument("--partition-id", type=int, required=True, choices=range(0, 5))
     args = parser.parse_args()
 
     # Load data
