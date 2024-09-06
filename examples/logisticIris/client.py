@@ -6,6 +6,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 import numpy as np
+import time
 
 # Parse command-line arguments for partition-id
 parser = argparse.ArgumentParser(description="Flower Client")
@@ -35,6 +36,7 @@ def load_partition(partition_id, num_partitions):
 class IrisClient(fl.client.NumPyClient):
     def __init__(self, partition_id):
         self.model = LogisticRegression(max_iter=100)
+        self.start_time = time.time()  # Record the start time
         
         # Load partitioned data
         self.X_train, self.X_test, self.y_train, self.y_test = load_partition(partition_id, num_partitions=5)
@@ -47,17 +49,35 @@ class IrisClient(fl.client.NumPyClient):
         self.model.intercept_ = parameters[1]
 
     def fit(self, parameters, config):
+        # Set model parameters before fitting
         self.set_parameters(parameters)
+        
+        # Train the model on the local partition
         self.model.fit(self.X_train, self.y_train)
+        
+        # Return updated model parameters and the number of samples
         return self.get_parameters(), len(self.X_train), {}
 
     def evaluate(self, parameters, config):
+        # Set model parameters before evaluating
         self.set_parameters(parameters)
-        loss = -accuracy_score(self.y_test, self.model.predict(self.X_test))
-        return loss, len(self.X_test), {"accuracy": accuracy_score(self.y_test, self.model.predict(self.X_test))}
+        
+        # Evaluate the model on the test set
+        y_pred = self.model.predict(self.X_test)
+        accuracy = accuracy_score(self.y_test, y_pred)
+        
+        # Calculate the time elapsed since the start of training
+        elapsed_time = time.time() - self.start_time
+        
+        # Print the accuracy and time taken after every round
+        print(f"Client {args.partition_id} - Accuracy: {accuracy:.4f}, Time Elapsed: {elapsed_time:.2f} seconds")
+        
+        # Return the loss and accuracy
+        loss = -accuracy  # Loss is negative accuracy
+        return loss, len(self.X_test), {"accuracy": accuracy}
 
 # Start Flower client with the provided partition-id
 if __name__ == "__main__":
     partition_id = args.partition_id
-    fl.client.start_numpy_client(server_address="192.168.1.100:8080", client=IrisClient(partition_id))
+    fl.client.start_numpy_client(server_address="10.128.15.214:8080", client=IrisClient(partition_id))
 
