@@ -48,7 +48,7 @@ class IrisClient(fl.client.NumPyClient):
         self.model.coef_ = parameters[0]
         self.model.intercept_ = parameters[1]
 
-    def fit(self, parameters, config):
+    def fit(self, parameters, config: Dict[str, str]):
         # Set model parameters before fitting
         self.set_parameters(parameters)
         
@@ -56,9 +56,9 @@ class IrisClient(fl.client.NumPyClient):
         self.model.fit(self.X_train, self.y_train)
         
         # Return updated model parameters and the number of samples
-        return self.get_parameters(), len(self.X_train), {}
+        return self.get_parameters(config={}), len(self.X_train), {}
 
-    def evaluate(self, parameters, config):
+    def evaluate(self, parameters, config: Dict[str, str]):
         # Set model parameters before evaluating
         self.set_parameters(parameters)
         
