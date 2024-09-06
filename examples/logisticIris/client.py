@@ -8,6 +8,8 @@ from sklearn.metrics import accuracy_score
 import numpy as np
 import time
 
+from typing import Dict, List, Tuple
+
 # Parse command-line arguments for partition-id
 parser = argparse.ArgumentParser(description="Flower Client")
 parser.add_argument("--partition-id", type=int, required=True, help="Partition ID for the client")
