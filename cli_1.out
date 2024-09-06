@@ -1,0 +1,158 @@
+/home/tejas/anaconda3/lib/python3.12/site-packages/datasets/utils/_dill.py:379: DeprecationWarning: co_lnotab is deprecated, use co_lines instead.
+  obj.co_lnotab,  # for < python 3.10 [not counted in args]
+INFO :      
+INFO :      Received: get_parameters message 42c77ffa-8521-4851-b586-73dd60fcac2e
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message 9d1ab09f-a78f-42d3-bf3c-1ec09bf9a6b8
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.106
+[1,   200] loss: 0.093
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message a7ea2aa6-c379-4c7a-b029-9f415ff9d537
+INFO :      test printout, accuracy: 0.366, time: 27.76108956336975
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message 71f67a96-93e3-4e29-b9fe-37a001dc9681
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.088
+[1,   200] loss: 0.084
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message 5fd39e11-6fd9-49ad-80b0-9537e0cf3323
+INFO :      test printout, accuracy: 0.4118, time: 44.37848210334778
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message 45bbf038-705e-4ec6-8e54-d04da6344b15
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.081
+[1,   200] loss: 0.079
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message 12cf630f-a54c-40fe-a42e-0218a11ca1fd
+INFO :      test printout, accuracy: 0.4392, time: 61.24978566169739
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message ebeb1e1a-5b80-454b-8fa6-41db9189b81f
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.076
+[1,   200] loss: 0.075
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message 9e5c7c72-e8f2-48bf-97ca-d0f792ed05fe
+INFO :      test printout, accuracy: 0.4652, time: 78.06426310539246
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message d1f20c0c-f543-4a78-b2b7-2c36d15977d4
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.073
+[1,   200] loss: 0.072
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message 53029e42-fbd9-4635-b310-d1ba28dcec1c
+INFO :      test printout, accuracy: 0.4818, time: 95.10236382484436
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message 02031245-9f5b-4d42-9787-8524f5575598
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.070
+[1,   200] loss: 0.069
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message 89a6de1e-3e42-46a6-bcda-cc84d872cf3b
+INFO :      test printout, accuracy: 0.4994, time: 111.73805785179138
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message 4e1f5787-48f0-4e2c-836f-a82b82301d0e
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.067
+[1,   200] loss: 0.066
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message 552812d9-869d-48a1-acf2-b9981a0ff2c9
+INFO :      test printout, accuracy: 0.514, time: 128.71650457382202
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message 98c719b2-ae67-403b-a6f7-eb9b1865472e
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.064
+[1,   200] loss: 0.064
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message 4b3e5cec-02c9-4060-89f8-d50371781399
+INFO :      test printout, accuracy: 0.5236, time: 145.66764163970947
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message 8e3aeba9-fc81-4997-b293-7ac593a010cd
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.062
+[1,   200] loss: 0.062
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message f8496512-643c-42b3-96ba-089750bd11bc
+INFO :      test printout, accuracy: 0.541, time: 162.50377774238586
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message 76a939df-fbae-428f-83eb-a1927b9fcea0
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.060
+[1,   200] loss: 0.060
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message ac2f1767-b103-4180-b7c2-0a63646556bd
+INFO :      test printout, accuracy: 0.5532, time: 179.5680730342865
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message 182c80e5-d688-4a56-bab9-ca1586564040
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.059
+[1,   200] loss: 0.059
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message 7c85e075-ef2b-487c-be37-249a339f4f69
+INFO :      test printout, accuracy: 0.5596, time: 196.74153518676758
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message 7589ad0f-c311-4813-8c1a-acbf1993f86d
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.057
+[1,   200] loss: 0.057
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message ffcbcc6e-cb9b-40e4-af87-ab453c90e4f0
+INFO :      test printout, accuracy: 0.567, time: 220.32383513450623
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message acb80401-20fb-48df-95e2-db6e5bb57246
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.056
+[1,   200] loss: 0.056
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message 91399ed8-76fc-415b-b4a2-15dd0e3e8f2e
+INFO :      test printout, accuracy: 0.5688, time: 248.36687898635864
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message 0d88f8f6-3128-4cb2-b762-57639befe0fd
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.055
+[1,   200] loss: 0.055
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message 2c6fc0d8-b76e-4260-825b-eea3db8bae66
+INFO :      test printout, accuracy: 0.5706, time: 276.1665623188019
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message eedd1232-514b-4cac-8282-36ab6337532d
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.053
+[1,   200] loss: 0.054
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message 8eba1da4-90f5-41bd-a4e2-041412ee6153
+INFO :      test printout, accuracy: 0.5732, time: 303.70295095443726
+INFO :      Sent reply
+INFO :      
+INFO :      Received: reconnect message f867706c-7071-4358-b38c-04eb01b6e6bf
+INFO :      Disconnect and shut down
