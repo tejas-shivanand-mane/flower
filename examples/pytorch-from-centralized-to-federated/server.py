@@ -47,12 +47,12 @@ class CustomFlowerServer(fl.server.Server):
 class DelayedFedAvgStrategy(fl.server.strategy.FedAvg):
     def aggregate_fit(self, rnd, results, failures):
         # Introduce latency before aggregating the results
-        time.sleep(5)  # Sleep for 5 seconds to simulate network latency
+        time.sleep(0)  # Sleep for 5 seconds to simulate network latency
         return super().aggregate_fit(rnd, results, failures)
 
     def aggregate_evaluate(self, rnd, results, failures):
         # Introduce latency before aggregating the evaluation results
-        time.sleep(5)  # Sleep for 5 seconds to simulate network latency
+        time.sleep(0)  # Sleep for 5 seconds to simulate network latency
         return super().aggregate_evaluate(rnd, results, failures)
 
 

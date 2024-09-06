@@ -75,7 +75,8 @@ class CifarClient(fl.client.NumPyClient):
         
         # Set model parameters, train model, return updated model parameters
         self.set_parameters(parameters)
-        time.sleep(8)        
+        time.sleep(0)       
+         
         cifar.train(self.model, self.trainloader, epochs=1, device=DEVICE)
         
 
@@ -86,7 +87,8 @@ class CifarClient(fl.client.NumPyClient):
         self, parameters: List[np.ndarray], config: Dict[str, str]
     ) -> Tuple[float, int, Dict]:
         # Set model parameters, evaluate model on local test dataset, return result
-        time.sleep(8)
+        time.sleep(0)
+        
         self.set_parameters(parameters)
         loss, accuracy = cifar.test(self.model, self.testloader, device=DEVICE)
         

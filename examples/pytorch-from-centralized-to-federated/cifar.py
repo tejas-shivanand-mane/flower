@@ -68,11 +68,15 @@ def load_data(partition_id: int):
 
     partition_train_test = partition_train_test.with_transform(apply_transforms)
     
-    sampler = SubsetRandomSampler(torch.randperm(len(partition_train_test["train"]))[:int(len(partition_train_test["train"]) * 0.1)])
-    sampler2 = SubsetRandomSampler(torch.randperm(len(partition_train_test["test"]))[:int(len(partition_train_test["test"]) * 0.1)])    
+    #sampler = SubsetRandomSampler(torch.randperm(len(partition_train_test["train"]))[:int(len(partition_train_test["train"]) * 0.1)])
+    #sampler2 = SubsetRandomSampler(torch.randperm(len(partition_train_test["test"]))[:int(len(partition_train_test["test"]) * 0.1)])    
     
-    trainloader = DataLoader(partition_train_test["train"], batch_size=100, sampler = sampler)
-    testloader = DataLoader(partition_train_test["test"], batch_size=100, sampler = sampler2)
+    #trainloader = DataLoader(partition_train_test["train"], batch_size=100, sampler = sampler)
+    #testloader = DataLoader(partition_train_test["test"], batch_size=100, sampler = sampler2)
+    
+    
+    trainloader = DataLoader(partition_train_test["train"], batch_size=100)
+    testloader = DataLoader(partition_train_test["test"], batch_size=100)    
     return trainloader, testloader
 
 
