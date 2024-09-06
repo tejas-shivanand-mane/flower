@@ -21,6 +21,8 @@ class CustomFlowerServer(fl.server.Server):
         self.round_start_time = None
 
     def fit(self, *args, **kwargs):
+        time.sleep(0)    
+    
         self.round_start_time = time.time()  # Record start time
         result = super().fit(*args, **kwargs)
         round_end_time = time.time()  # Record end time
@@ -33,27 +35,13 @@ class CustomFlowerServer(fl.server.Server):
         return result
         
     def evaluate(self, *args, **kwargs):
+        time.sleep(0)    
         result = super.evaluate(*args, **kwargs)
         log(INFO, "test printout, server")
         
         return result
 
 
-
-
-
-
-# Define strategy
-class DelayedFedAvgStrategy(fl.server.strategy.FedAvg):
-    def aggregate_fit(self, rnd, results, failures):
-        # Introduce latency before aggregating the results
-        time.sleep(0)  # Sleep for 5 seconds to simulate network latency
-        return super().aggregate_fit(rnd, results, failures)
-
-    def aggregate_evaluate(self, rnd, results, failures):
-        # Introduce latency before aggregating the evaluation results
-        time.sleep(0)  # Sleep for 5 seconds to simulate network latency
-        return super().aggregate_evaluate(rnd, results, failures)
 
 
 
@@ -68,6 +56,5 @@ server = CustomFlowerServer(client_manager=client_manager)
 fl.server.start_server(
     server_address="10.128.15.215:8080",
     config=fl.server.ServerConfig(num_rounds=30),
-    server = server,
-    strategy = DelayedFedAvgStrategy(min_fit_clients=2, min_available_clients=2)
+    server = server
 )
