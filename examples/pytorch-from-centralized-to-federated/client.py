@@ -118,7 +118,7 @@ def main() -> None:
 
     # Start client
     client = CifarClient(model, trainloader, testloader).to_client()
-    fl.client.start_client(server_address="10.128.15.216:8080", client=client)
+    fl.client.start_client(server_address="10.128.15.210:8080", client=client)
 
 
 if __name__ == "__main__":
