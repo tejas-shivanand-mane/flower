@@ -4,7 +4,6 @@ import flwr as fl
 # Define strategy (FedAvg is the default strategy)
 strategy = fl.server.strategy.FedAvg(
     min_fit_clients=2,  # Minimum number of clients to participate in each round
-    min_eval_clients=2,  # Minimum number of clients to participate in evaluation
     min_available_clients=2,  # Minimum number of clients in the system
 )
 
