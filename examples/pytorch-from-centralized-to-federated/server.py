@@ -19,6 +19,7 @@ class CustomFlowerServer(fl.server.Server):
         super().__init__(*args, **kwargs)
         self.cumulative_time = 0
         self.round_start_time = None
+        self.min_clients = 5
 
     def fit(self, *args, **kwargs):
         time.sleep(0)    
@@ -43,12 +44,6 @@ class CustomFlowerServer(fl.server.Server):
 
 
 
-
-strategy = fl.server.strategy.FedAvg(
-    min_fit_clients=5,
-    min_available_clients=5,
-)
-
 client_manager = fl.server.client_manager.SimpleClientManager()
 
 # Create a server instance
@@ -57,7 +52,7 @@ server = CustomFlowerServer(client_manager=client_manager)
 
 # Start Flower server
 fl.server.start_server(
-    server_address="10.128.15.210:8080",
+    server_address="10.128.15.208:8080",
     config=fl.server.ServerConfig(num_rounds=15),
-    server = server, strategy = strategy
+    server = server
 )
