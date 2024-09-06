@@ -1,0 +1,308 @@
+/home/tejas/anaconda3/lib/python3.12/site-packages/datasets/utils/_dill.py:379: DeprecationWarning: co_lnotab is deprecated, use co_lines instead.
+  obj.co_lnotab,  # for < python 3.10 [not counted in args]
+INFO :      
+INFO :      Received: get_parameters message e71581d1-cbfe-4063-8dc0-0a0e734f8d2c
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message e9bd3131-7239-482e-8681-e23adc44d69f
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.108
+[1,   200] loss: 0.094
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message 5a3b28ad-e55f-4088-82fa-42caf878fa3c
+INFO :      test printout, accuracy: 0.3594, time: 22.4384868144989
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message a669f84f-abe2-4a5f-9323-74ca03d0cdc3
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.086
+[1,   200] loss: 0.082
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message 718a6aa6-7e66-4d12-b626-497695fd902a
+INFO :      test printout, accuracy: 0.4216, time: 41.3956823348999
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message e106131a-7c6f-47bc-af83-5cbcdf80a0a4
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.079
+[1,   200] loss: 0.076
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message 8c2744ef-ab24-4943-863f-695f71ac5c9c
+INFO :      test printout, accuracy: 0.447, time: 61.331974029541016
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message 8a97407e-b957-448a-9c88-7150a0d0cf43
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.074
+[1,   200] loss: 0.073
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message 614397e1-059c-4764-b7c3-783f41cf48b9
+INFO :      test printout, accuracy: 0.4692, time: 77.46779251098633
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message eab24fa1-3f5b-46f5-91fd-eda6784301f7
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.071
+[1,   200] loss: 0.070
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message 5f9901f6-7cfa-4ada-8645-f887ec8921c9
+INFO :      test printout, accuracy: 0.4908, time: 93.7823965549469
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message 737c6f61-01ce-43f9-8c56-587697cd1533
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.068
+[1,   200] loss: 0.068
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message ae5b6a3f-9fad-4c63-a7d6-8dcd19c96c37
+INFO :      test printout, accuracy: 0.4978, time: 110.0973572731018
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message 3107d607-9400-4342-a465-f562640f01c6
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.066
+[1,   200] loss: 0.066
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message 77ac69ae-497e-4485-979d-56de6ee81eaf
+INFO :      test printout, accuracy: 0.5118, time: 126.80119705200195
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message 8d6676cd-b4b9-47d2-891e-687873ed6ad1
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.064
+[1,   200] loss: 0.064
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message 1384010e-84a8-473d-847c-5f5e38d24f88
+INFO :      test printout, accuracy: 0.5208, time: 143.01470708847046
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message a7dc27a0-128a-4d1f-b3ba-55dea28d9aa4
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.062
+[1,   200] loss: 0.062
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message bbba9ae5-85c6-4c68-bc42-d2993643981e
+INFO :      test printout, accuracy: 0.5292, time: 159.29779744148254
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message 3dac90bc-b6b2-4e1c-abbf-a20a2847565c
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.061
+[1,   200] loss: 0.061
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message 251626a8-4180-4d5c-922b-692ebe336e78
+INFO :      test printout, accuracy: 0.537, time: 175.201171875
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message 329657a7-db55-4897-a03d-63b3918be414
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.059
+[1,   200] loss: 0.060
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message e080e763-b128-4eb4-80c2-2bc3431a085d
+INFO :      test printout, accuracy: 0.543, time: 192.5104637145996
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message dc8573fa-7c2c-4234-a095-1ab236cbc8fe
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.058
+[1,   200] loss: 0.058
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message 4f5f2f08-aa48-4d21-9424-24e6f096b9ee
+INFO :      test printout, accuracy: 0.5482, time: 209.0459005832672
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message db050f38-ec6d-4c53-a4a4-2a5cb8ea5438
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.057
+[1,   200] loss: 0.057
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message 3cb875b3-47cd-4d69-a711-c9056f0c561e
+INFO :      test printout, accuracy: 0.5552, time: 231.20904684066772
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message 63e270fd-4d3a-4f67-adba-78b27b3e4e18
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.056
+[1,   200] loss: 0.056
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message 6b4b8a5e-5a16-4e17-956c-45f6f1700da7
+INFO :      test printout, accuracy: 0.559, time: 257.51459789276123
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message 8f15e393-3b12-4703-b765-16d9e2c61772
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.055
+[1,   200] loss: 0.055
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message 85316a3d-8861-4c29-8e00-41a4c0648656
+INFO :      test printout, accuracy: 0.5602, time: 284.05499935150146
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message c5b69d6a-4b34-4084-a2ce-31188c3bbec1
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.053
+[1,   200] loss: 0.054
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message 2c31fd5e-535a-4740-8b96-7052f25b0579
+INFO :      test printout, accuracy: 0.5606, time: 310.32781958580017
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message d1ce101e-c1e2-4699-a010-e8aa486f14a6
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.052
+[1,   200] loss: 0.053
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message ea1d7d1e-7f2a-48de-a889-ff0d29638df0
+INFO :      test printout, accuracy: 0.5652, time: 336.66022515296936
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message 558915cf-f116-47c2-a834-f0225270afec
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.051
+[1,   200] loss: 0.052
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message 203533bb-7b58-444c-9e3a-5ccee70f2a9c
+INFO :      test printout, accuracy: 0.5696, time: 362.71322536468506
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message bdc168ed-3278-48dd-a5e5-2c2e75daeebf
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.050
+[1,   200] loss: 0.052
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message 68e1e8ce-0972-44d5-8821-c02754ad60bd
+INFO :      test printout, accuracy: 0.5732, time: 389.4526677131653
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message 4e154262-6565-4b57-9444-eea931dd6c24
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.049
+[1,   200] loss: 0.051
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message b9ff45f8-b4ad-4d8b-b3e2-bc3332f2fe0b
+INFO :      test printout, accuracy: 0.5786, time: 414.7207567691803
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message 9c1ec61a-5ec4-4397-8ae4-701584a76694
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.048
+[1,   200] loss: 0.050
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message 0d0b0631-ea4f-4ce9-a4de-1f7fc8c0d30d
+INFO :      test printout, accuracy: 0.5814, time: 439.5350339412689
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message c9a0ee46-ad08-4322-96a2-373eb725b89b
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.048
+[1,   200] loss: 0.049
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message 16d78eac-d90d-4f00-b468-fe746e340c76
+INFO :      test printout, accuracy: 0.5834, time: 464.3436589241028
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message e73081f6-ad80-45b1-a7de-8093fb1b473c
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.047
+[1,   200] loss: 0.048
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message 6b5318f0-e6ea-4925-9597-e4191ce0051b
+INFO :      test printout, accuracy: 0.5876, time: 488.8955924510956
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message b94b752b-3b09-4ba0-b9dd-d0af5c68e1e8
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.046
+[1,   200] loss: 0.048
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message a821fb53-e3d9-42fe-89f8-80f417e95c28
+INFO :      test printout, accuracy: 0.5848, time: 514.4149181842804
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message aeeab798-0562-4f54-bbca-a9f147b76996
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.046
+[1,   200] loss: 0.047
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message defe60c0-8ba7-4f6f-93da-29641284779a
+INFO :      test printout, accuracy: 0.5804, time: 540.2759521007538
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message 659e37c1-1538-4d26-abb8-2b5f412c58de
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.045
+[1,   200] loss: 0.046
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message 6b26a985-de93-4eb6-a456-f3fc5eb41dbe
+INFO :      test printout, accuracy: 0.5794, time: 566.2206907272339
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message 80e3b57a-3e1a-4890-9d12-96dbdd3c9fdc
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.044
+[1,   200] loss: 0.046
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message f3739b23-6d0e-4ae7-80c5-0e738089a720
+INFO :      test printout, accuracy: 0.5838, time: 591.5673232078552
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message f139c6a8-2ce0-4acb-aa93-a45468b3411f
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.043
+[1,   200] loss: 0.045
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message 98e556e5-0be5-45e0-858b-93607053d744
+INFO :      test printout, accuracy: 0.5818, time: 617.4419403076172
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message 40b4f9fc-c343-429c-bd90-a8e73e14f28e
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.043
+[1,   200] loss: 0.044
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message b443b23f-1868-42cb-ac27-6400143b3a0e
+INFO :      test printout, accuracy: 0.5822, time: 644.8768012523651
+INFO :      Sent reply
+INFO :      
+INFO :      Received: train message 7dfeab1d-e7e4-4e29-b34f-99146c9d1f71
+Training 1 epoch(s) w/ 200 batches each
+[1,   100] loss: 0.042
+[1,   200] loss: 0.044
+INFO :      Sent reply
+INFO :      
+INFO :      Received: evaluate message 568ff644-7315-4e88-8432-80e3f2e4d3b4
+INFO :      test printout, accuracy: 0.5832, time: 679.8884518146515
+INFO :      Sent reply
+INFO :      
+INFO :      Received: reconnect message d6f21113-f34f-4982-8a70-9856e397a7f7
+INFO :      Disconnect and shut down

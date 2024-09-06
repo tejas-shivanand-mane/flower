@@ -21,7 +21,7 @@ class CustomFlowerServer(fl.server.Server):
         self.round_start_time = None
 
     def fit(self, *args, **kwargs):
-        time.sleep(0)    
+        time.sleep(2)    
     
         self.round_start_time = time.time()  # Record start time
         result = super().fit(*args, **kwargs)
@@ -35,7 +35,7 @@ class CustomFlowerServer(fl.server.Server):
         return result
         
     def evaluate(self, *args, **kwargs):
-        time.sleep(0)    
+        time.sleep(2)    
         result = super.evaluate(*args, **kwargs)
         log(INFO, "test printout, server")
         
