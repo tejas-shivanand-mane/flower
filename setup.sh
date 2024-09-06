@@ -12,6 +12,6 @@ export PATH=$PATH:/home/tejas/anaconda3/bin/
 
 conda install -y pytorch torchvision torchaudio cpuonly -c pytorch
 
-pip install -q flwr[simulation] flwr-datasets[vision] torch torchvision
+pip install -q flwr[simulation] flwr-datasets[vision] torch torchvision scikit-learn
 
 
